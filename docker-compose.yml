@@ -1,0 +1,9 @@
+services:
+  postal-service:
+    build: .
+    container_name: postal-service
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./data:/app/data
+      - ./postal_report.docx:/app/postal_report.docx
